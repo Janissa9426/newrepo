@@ -1,0 +1,40 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tollsqllinked",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Productid",
+				"type": "varchar"
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "qtyonhand",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "reorderlvl",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "productrate",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "product"
+		}
+	}
+}
