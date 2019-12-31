@@ -80,7 +80,7 @@
 									{
 										"source": {
 											"name": "QtyonHand",
-											"type": "String"
+											"type": "Int16"
 										},
 										"sink": {
 											"name": "qtyonhand",
@@ -90,7 +90,7 @@
 									{
 										"source": {
 											"name": "ReorderLvl",
-											"type": "String"
+											"type": "Int16"
 										},
 										"sink": {
 											"name": "reorderlvl",
@@ -100,7 +100,7 @@
 									{
 										"source": {
 											"name": "Productrate",
-											"type": "String"
+											"type": "Int16"
 										},
 										"sink": {
 											"name": "productrate",
