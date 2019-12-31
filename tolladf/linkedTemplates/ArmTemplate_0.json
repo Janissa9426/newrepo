@@ -65,6 +65,7 @@
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
+					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
 				"schema": []
@@ -169,7 +170,62 @@
 							"sink": {
 								"type": "AzureSqlSink"
 							},
-							"enableStaging": false
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"name": "ProductID",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Productid",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "Name",
+											"type": "String"
+										},
+										"sink": {
+											"name": "name",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "QtyonHand",
+											"type": "String"
+										},
+										"sink": {
+											"name": "qtyonhand",
+											"type": "Int32"
+										}
+									},
+									{
+										"source": {
+											"name": "ReorderLvl",
+											"type": "String"
+										},
+										"sink": {
+											"name": "reorderlvl",
+											"type": "Int32"
+										}
+									},
+									{
+										"source": {
+											"name": "Productrate",
+											"type": "String"
+										},
+										"sink": {
+											"name": "productrate",
+											"type": "Int32"
+										}
+									}
+								]
+							}
 						},
 						"inputs": [
 							{
